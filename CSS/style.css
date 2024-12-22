@@ -1,0 +1,150 @@
+
+body {
+    background-color: rgb(206, 171, 239);
+    background-size: cover;   
+    background-repeat: no-repeat;
+}
+
+.header {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    gap: 15px;  
+    background-color: blueviolet; 
+}
+
+.icon {
+    display: inline-block;
+    width: 50px;  
+    height: 50px;   
+}
+
+.icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.box {
+    background-color: white; 
+    padding: 20px 40px; 
+    border-radius: 10px; 
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2); 
+    text-align: center;
+    margin-top: 50px;
+}
+h3{
+    text-align: center;
+}
+
+.box input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+
+.box input:focus {
+    border-color: #6a5acd;
+}
+
+.box button {
+    background-color: #6a5acd;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 300px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+.box button:hover {
+    background-color: #e61e17;
+}
+
+/* Main container for shop-like categories */
+/* Main container for shop-like categories */
+#shop-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 400px;               /* Space between categories */
+    max-width: 1200px;       /* Optional: Limit the width of the container */
+    margin: 0 auto;  
+    align-items: center;
+}
+
+.category-title {
+    font-size: 26px;
+    color: #333;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ccc;  /* Optional: Underline for category titles */
+    padding-bottom: 10px;
+    text-align: center;             /* Center align the title */
+}
+
+.country-card {
+    background-color: #ffffff;   /* White background for cards */
+    padding: 15px;
+    border-radius: 10px;
+    width: 180px;                /* Card width */
+    text-align: center;
+    margin: 20px;                /* Add margin to each card for spacing */
+    display: inline-block;
+    align-items: center;
+}
+
+/* Hover effect for cards */
+.country-card:hover {
+    transform: translateY(-10px);  /* Lift the card on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Flag image styling */
+.country-card img {
+    width: 150px;
+    height: 75px;               /* Consistent height for flags */
+    object-fit: cover;           /* Ensure the image covers the area */
+    border-radius: 5px;          /* Slight rounding for image corners */
+    margin-bottom: 10px;
+}
+
+.country-card h4 {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0 5px 0;
+    font-weight: 600;
+}
+
+.country-card p {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+}
+.view-map-button {
+    background-color: #6a5acd;  /* A visually appealing color for the button */
+    color: white;               /* White text for contrast */
+    border: none;
+    padding: 8px 12px;
+    margin-top: 10px;           /* Space above the button */
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;         /* Rounded corners */
+    width: 100%;                /* Make button full width of the card */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);  /* Subtle shadow */
+    transition: background-color 0.3s;
+}
+
+/* Hover effect for the button */
+.view-map-button:hover {
+    background-color: #e61e17;  /* Slightly darker color on hover */
+}
